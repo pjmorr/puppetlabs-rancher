@@ -8,6 +8,9 @@ class rancher::params {
   $docker_socket = '/var/run/docker.sock'
   $agent_address = $::ipaddress
   $image_tag = 'latest'
+  $instance_type = $::ec2_metadata['instance-type']
+  $instance_id = $::ec2_metadata['instance-id']
+  $availability_zone = $::ec2_metadata['placement']['availability-zone']
   $container_name = 'rancher-server'
   $db_port = 3306
   $db_name = 'rancher'

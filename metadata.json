@@ -4,12 +4,13 @@
   "author": "puppetlabs",
   "summary": "Installs Rancher Server and Agents",
   "license": "Apache-2.0",
-  "source": "git://github.com/puppetlabs/puppetlabs-rancher.git",
-  "project_page": "https://github.com/puppetlabs/puppetlabs-rancher",
-  "issues_url": "https://github.com/puppetlabs/puppetlabs-rancher/issues",
+  "source": "git://github.com/pjmorr/puppetlabs-rancher.git",
+  "project_page": "https://github.com/pjmorr/puppetlabs-rancher",
+  "issues_url": "https://github.com/pjmorr/puppetlabs-rancher/issues",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
-    {"name":"garethr-docker","version_requirement":">= 5.0.0"}
+    {"name":"garethr-docker","version_requirement":">= 5.0.0"},
+    {"name":"bryana-ec2tagfacts","version_requirement":">= 0.2.1"}
   ],
   "data_provider": null,
   "operatingsystem_support": [
